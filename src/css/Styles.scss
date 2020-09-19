@@ -1,0 +1,249 @@
+html, body{
+    margin: 0px;
+    height: 100%;
+    overflow: auto;
+}
+
+.Login{
+    
+    &.main_div{
+        width: 100%;
+        height: 80px;
+        background-color: #003149;
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+    &.main_div2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+    }
+    &.button1{ width: 100px;}
+    &.button2{ width: 182px;}
+    &.input{ width: 300px;}
+    &.paper{
+        margin-left: 80px;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+    }
+    &.link{ text-decoration: none }
+}
+
+.Set_pswd{
+    &.button1{ width: 175px;  }
+}
+
+.Reset_pswd{
+    &.button1{ width: 300px;  }
+}
+
+.List{
+    &.root_div{
+        min-width: 1020px;
+        overflow: auto;
+    }
+    &.main_div{
+        width: 100%;
+        height: 80px;
+        background-color: #003149;
+        color: white;
+        font-size: 14px;
+    }
+    &.user_table{
+        margin-left: 10px;
+        float: left;
+    }
+    &.tbody td{
+        white-space: nowrap;
+        width: 120px;
+    }
+    &.button1{
+        margin: 10px;
+        float: right;
+        width: 130px;
+        height: 60px;
+        font-size: 25px;
+    }
+    &.button2{
+        margin: 10px;
+        float: right;
+        height: 60px;
+        background-color: white;
+        color: rgb(25, 99, 143);
+        font-size: 14px;
+    }
+    &.root{  width: 100% }
+    &.tableWrapper{
+        max-height: 600px;
+        overflow: auto;
+    }
+    &.tableWrapper :only-child{ white-space: nowrap; }
+    &.sort_div{ 
+        height: 45px;
+    }
+    &.TablePagination{  
+        float: right;
+    }
+    &.check{
+        float: left;
+        width: 75px;
+        margin-right: 15px;
+        margin-left: 22%;
+        margin-top: -12px;
+    }
+    &.select{
+        float: left;
+        width: 85px;
+        font-size: 12px;
+        margin-top: 9px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    &.searchicon{
+        margin-top: 10px;
+        float: left;
+    }
+    &.search_input{
+        margin-top: 4px;
+    }
+    &.navi_button{
+        width: 150px;
+        margin: 5px;
+        float: right;
+    }
+    &.navi_div{
+        width: 100%;
+        float: right;
+    }
+}
+
+.Evaluate{
+    &.main_div1{
+        width: 100%;
+        //display: flex;
+        //justify-content: center;
+        //align-items: center;
+    }
+    &.main_div2{
+        width: 1500px;  
+        margin: 10px auto;
+    }
+    &.user_info_col{
+        background-color: #003149;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding: 2px;
+    }
+    
+    &.user_paper{
+        margin: 5px;
+        width:500px;
+        float: left;
+    }
+    &.user_paper2{
+        margin: 5px;
+        width:300px;
+        float: left;
+    }
+    &.status_paper{
+        margin: 5px;
+        width:123px;
+        float: left;
+        text-align: center;
+    }
+    &.result_paper{
+        margin: 5px;
+        width:1500px;
+        overflow: auto;  
+    }
+
+    &.user_info_cell{
+        font-size: 12px;
+        text-align: center;
+        padding: 2px;
+    }
+    &.status_cell{
+        font-size: 42px;
+        text-align: center;
+    }
+    &.logout_button{
+        margin: 5px;
+        background-color: #003149;
+        height: 116px;
+    }
+    &.input_result_row :only-child{
+        font-size: 12px;
+    }
+    &.input_result_cell{
+        padding:4px;
+    }
+    &.add_row_bt{
+        color: white;
+        background-color: rgba(217, 100, 228, 0.671);
+        height: 20px;
+        padding: 0px;
+        float: right;
+        font-size: 13px;
+    }
+    &.result_result{
+        font-size: 12px;
+        text-align: center;
+        padding: 2px;
+        padding-left: 0px;
+    }
+    &.ability_list{
+        font-size: 12px;
+        padding: 2px;
+    }
+    &.ability_list_div{
+        font-size: 12px;
+        padding: 2px;
+        width: 320px;
+        height: 50px;
+        overflow: auto;
+    }
+    &.ability_list_div2{
+        font-size: 12px;
+        padding: 2px;
+        width: 180px;
+        height: 50px;
+        overflow: auto;
+    }
+
+    &.feedback_paper{
+        margin: 5px;
+        width: 900px;
+        float: left;
+    }
+    &.feedback_col{
+        background-color: #003149;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding: 2px;
+        width: 100px
+    }
+    &.bottom_button{
+        margin: 5px;
+        background-color: #003149;
+        height: 78px;
+        width: 100px;
+        font-size: 16px;  
+        float: right;      
+    }
+    &.disabled{
+        :disabled{
+            color : rgb(0, 0, 0);
+            padding : 3px;
+        }
+    }
+    &.textfield{        
+        background-color: #ececcda1;
+        padding : 3px;
+    }
+}
