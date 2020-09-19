@@ -12,11 +12,11 @@ var transprter = nodemailer.createTransport({
     port : 587,
     secure : false,
     auth : {
-        user : 'choe.yohan@tetsujinka.com',
-        pass : 'dygks123'
+        user : '',
+        pass : ''
     },
     tls : {
-        ciphers : 'SSLv3'
+        ciphers : ''
     },
     requireTLS : true
 })
@@ -99,7 +99,7 @@ router.post("/api/send_mail", async function(req, res, next){
             req.session.reset_pswd_id = user_info.ID;
 
             var mail_result = await transprter.sendMail({
-                from : 'choe.yohan@tetsujinka.com',
+                from : '',
                 to : user_info.MAIL,
                 subject : '人事評価システムパスワードリセット',
                 text : user_info.NAME+'様\nお疲れ様です。\n\n次のURLに接続してパスワード変更を進めてください。\n\n'+front_url+"/reset_pswd/"+mail_pswd
@@ -269,7 +269,7 @@ router.post("/api/input_evaluate", async function(req, res, next){
             
             if(user_info){    
                 await transprter.sendMail({
-                    from : 'choe.yohan@tetsujinka.com',
+                    from : '',
                     to : user_info.MAIL,
                     subject : '人事評価シートの差戻し',
                     text : user_info.NAME+'様\nお疲れ様です。\n\n人事評価シートが差戻されましたので書き直していただきます。\n次は差戻された理由でございます。\n\n\n'+evaluate_state.COMMENT
@@ -427,7 +427,7 @@ router.post("/api/send_status", async function(req, res, next){
         for(var i = 0; i < result.length; i++){
             if(result){    
                 mail_result = await transprter.sendMail({
-                    from : 'choe.yohan@tetsujinka.com',
+                    from : '',
                     to : result[i].MAIL,
                     subject : '人事評価の現在のステータスのお知らせ',
                     text : result[i].NAME+'様\nお疲れ様です。\n\n'+result[i].NAME+'様のステータスは「'+result[i].STATUS+'」となっておりますので\n次のステータスに進めていただくようお願いします。\n\n\n'
