@@ -2,7 +2,7 @@
 
 説明　：　社員評価が可能なウェブアプリケーション
 
-環境　：　React, Material, MSSQL, Ubuntu, Apache2, Node.js
+環境　：　React, Material, MSSQL, Ubuntu, Apache2, Node.js（Express）
 
 PATH
 - FrontEnd  : ./src
